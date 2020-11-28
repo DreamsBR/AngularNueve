@@ -1,0 +1,40 @@
+
+<div class="container">
+  Clientes
+</div>
+
+<div class="container">
+  <div class="row justify-content-center p-2">
+      <h1>Angular 9 Firebase</h1>
+  </div>
+
+  <div class="form-group">
+    <input type="text" class="form-control"  [(ngModel)]="apellido" placeholder="Ingre Apellido">
+  </div>
+
+
+  <div class="form-group">
+    <input type="text" class="form-control"  [(ngModel)]="nombre" placeholder="Ingre Nombre">
+  </div>
+
+  <div class="form-group">
+    <input type="text" class="form-control"  [(ngModel)]="edad" placeholder="Ingre Edad">
+  </div>
+
+  <div class="form-group">
+    <input type="text" class="form-control" [(ngModel)]="fechanac"  placeholder="Ingre Fecha Nacimiento">
+  </div>
+
+<div class="form-group">
+  <button class="btn btn-primary"  (click)="Ingreso()" [disabled]="!apellido || !nombre || !edad || !fechanac" >Guardar</button>
+</div>
+<div class="form-group">
+  <h3 class="info">{{messaj}}</h3>
+  <a href="listar" >Ingresar</a>
+  <a routerLink="../listar" >IND</a>
+
+  <button class="btn btn-primary" (click)="goPlaces()" >Listar</button>
+
+
+</div>
+</div>
